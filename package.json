@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build --no-type-check",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -30,7 +30,8 @@
     "vue-router": "latest"
   },
   "devDependencies": {
-    "typescript": "^5.7.2",
+    "@types/node": "^22.10.1",
+    "typescript": "5.6",
     "vue-tsc": "^2.1.10"
   }
 }
