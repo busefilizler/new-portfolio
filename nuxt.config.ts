@@ -9,9 +9,13 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
 
   ],
+  ssr: false,
   devtools: { enabled: false },
 
   compatibilityDate: '2024-11-01',
+  nitro: {
+    preset: 'node-server',
+  },
   typescript: {
     typeCheck: true,
   },
