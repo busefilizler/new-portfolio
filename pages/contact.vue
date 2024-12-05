@@ -7,15 +7,15 @@
         class="mt-4"
         tag="h1"
       >
-        Contact
+        {{ $t('menu.contact') }}
       </AppParagraph>
       <AppParagraph class="mt-16 text-lg max-w-prose">
-        <b>Hey there!</b> I'm always happy to hear from you. If you have any
-        questions, or feedback or just want to say hi, feel free to reach out to
-        me on any of the platforms linked in the footer or via email.
+        <b>{{ $t('contactPage.hiThere') }}</b> {{ $t('contactPage.intro') }}
       </AppParagraph>
       <AppButton class="mr-4 mt-20">
-        <a href="mailto:filizlerbuse@gmail.com">Send email</a>
+        <a href="mailto:filizlerbuse@gmail.com">
+          {{ $t('sendMail') }}
+        </a>
       </AppButton>
       <AppButton
         class="mr-4 mt-6"
@@ -24,11 +24,13 @@
         <a
           href="/files/buseDurudoganCv.pdf"
           download="buseDurudoganCv.pdf"
-        >Download Resume</a>
+        >
+          {{ $t('downloadResume') }}
+        </a>
       </AppButton>
 
       <AppParagraph class="mt-20 text-lg max-w-prose">
-        I usually respond within 24 to 48 hours.
+        {{ $t('contactPage.intro2') }}
       </AppParagraph>
     </AppSection>
     <AppSection />

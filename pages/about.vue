@@ -7,7 +7,7 @@
         class="mt-4"
         tag="h1"
       >
-        About me
+        {{ $t('menu.about') }}
       </AppParagraph>
       <div class="lg:grid grid-cols-2 lg:items-start mt-16 lg:mt-0">
         <div class="lg:hidden">
@@ -24,20 +24,15 @@
           <div class="prose lg:prose-lg lg:mt-8">
             <h2>Hey!</h2>
             <p>
-              I’m a passionate <b>front-end developer</b> based in İzmir,
-              Turkey, always striving to become a better version of myself. I
-              excel in collaborative environments, enjoy connecting with people,
-              and take pride in creating meaningful and visually appealing
-              projects. I am eager to explore new technologies, push my
-              boundaries, and make a lasting impact as part of a dynamic team.
+              {{ $t('aboutPage.intro') }}
             </p>
 
-            <h2>Tech Stack</h2>
+            <h2>
+              {{ $t('aboutPage.techStack') }}
+            </h2>
 
             <p>
-              Working with various frameworks and libraries is always a joy! If
-              I were to choose my dream tech stack, it would include the
-              following:
+              {{ $t('aboutPage.intro2') }}
             </p>
 
             <ul
@@ -142,14 +137,7 @@
             </ul>
 
             <p>
-              Additionally, my technical expertise encompasses a wide array of
-              tools and frameworks essential for modern web development. I
-              specialize in Vue.js (2/3), TypeScript, and design systems like
-              Tailwind CSS, ElementUI, and Vuetify. I am proficient in Nuxt.js,
-              Pinia, DevExtreme, and socket.io for creating seamless,
-              interactive web applications. With a solid foundation in Git,
-              Jira, and design tools like Figma and Adobe XD, I seamlessly
-              combine functionality and design in every project.
+              {{ $t('aboutPage.also') }}
             </p>
           </div>
         </div>

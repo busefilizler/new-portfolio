@@ -1,15 +1,18 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 const navigation = {
   general: [
     {
-      name: 'Home',
+      name: 'menu.home',
       to: '/',
       activeRoutes: ['/', '/about/', '/project/', '/contact/'],
     },
-    { name: 'About me', to: '/about/' },
-    { name: 'My projects', to: '/project/' },
+    { name: 'menu.about', to: '/about/' },
+    { name: 'menu.projects', to: '/project/' },
   ],
-  contact: [{ name: 'Contact me', to: '/contact/' }],
+  contact: [{ name: 'menu.contact', to: '/contact/' }],
   social: [
     {
       name: 'GitHub',
@@ -69,7 +72,7 @@ const navigation = {
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div class="mt-10 md:mt-0">
               <h3 class="text-sm font-semibold leading-6 text-white">
-                General
+                {{ $t('footer.general') }}
               </h3>
               <ul
                 role="list"
@@ -83,14 +86,14 @@ const navigation = {
                     :href="item.to"
                     class="text-sm leading-6 text-gray-300 hover:text-white"
                   >
-                    {{ item.name }}
+                    {{ t(item.name) }}
                   </AppLink>
                 </li>
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
               <h3 class="text-sm font-semibold leading-6 text-white">
-                Contact
+                {{ $t('footer.contact') }}
               </h3>
               <ul
                 role="list"
@@ -104,7 +107,7 @@ const navigation = {
                     :to="item.to"
                     class="text-sm leading-6 text-gray-300 hover:text-white"
                   >
-                    {{ item.name }}
+                    {{ t(item.name) }}
                   </AppLink>
                 </li>
                 <li>
@@ -112,7 +115,8 @@ const navigation = {
                     <a
                       href="mailto:filizlerbuse@gmail.com"
                     >
-                      Send email</a>
+                      {{ $t('footer.sendEmail') }}
+                    </a>
                   </AppLink>
                 </li>
               </ul>
@@ -132,7 +136,7 @@ const navigation = {
             class="text-gray-400"
             :class="item.hoverClass"
           >
-            <span class="sr-only">{{ item.name }}</span>
+            <span class="sr-only">{{ t(item.name) }}</span>
             <Icon
               :name="item.icon"
               class="h-6 w-6"
@@ -151,10 +155,11 @@ const navigation = {
           </a>
         </div>
         <p class="mt-6 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
-          &copy; {{ new Date().getFullYear() }} Buse Durudoğan &bull; Frontend
-          Developer
+          &copy; {{ new Date().getFullYear() }} {{ $t('footer.copyRight') }}
           <br>
-          <span class="text-[8px] leading-5 text-gray-400">Logo designed by <a href="https://linktr.ee/muratyilmazdesign">Murat Yılmaz</a></span>
+          <span class="text-[8px] leading-5 text-gray-400">
+            {{ $t('footer.logoCredit') }}
+            <a href="https://linktr.ee/muratyilmazdesign">Murat Yılmaz</a></span>
         </p>
       </div>
     </div>
