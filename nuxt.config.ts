@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2024-11-01',
   nitro: {
-    preset: 'node-server',
+    preset: 'static',
   },
   typescript: {
     typeCheck: true,
