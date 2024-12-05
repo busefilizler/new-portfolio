@@ -44,7 +44,7 @@ const navigation = {
     >
       Footer
     </h2>
-    <div class="mx-auto max-w-7xl px-6 pb-8 pt-8 sm:pt-16 lg:px-8 xl:pt-22">
+    <div class="mx-auto max-w-7xl px-6 pb-8 pt-8 sm:pt-10 lg:px-8 xl:pt-22">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="flex justify-center items-center xl:col-span-1">
           <img
@@ -65,7 +65,7 @@ const navigation = {
           >
         </div>
 
-        <div class="grid grid-cols-1 gap-8 xl:col-span-2 pt-12 xl:pt-4">
+        <div class="grid grid-cols-1 gap-8 xl:col-span-2 pt-10 xl:pt-4">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div class="mt-10 md:mt-0">
               <h3 class="text-sm font-semibold leading-6 text-white">

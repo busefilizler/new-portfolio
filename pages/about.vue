@@ -12,7 +12,7 @@
       <div class="lg:grid grid-cols-2 lg:items-start mt-16 lg:mt-0">
         <div class="lg:hidden">
           <img
-            class="w-40 rounded-full mx-auto pb-24 opacity-50"
+            class="w-40 rounded-full mx-auto pb-18 opacity-50"
             width="192"
             height="192"
             placeholder="blur"

@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 const currentImage = ref('/img/me.webp')
-
+const showMail = ref(false)
 function handleHover(hover: boolean) {
   currentImage.value = hover ? '/img/meOrj.webp' : '/img/me.webp'
 }
@@ -59,7 +59,11 @@ function handleHover(hover: boolean) {
             tanstack/vue-query, Nuxt.js, and React.
           </AppParagraph>
           <div class="pt-8 flex">
-            <AppButton class="mr-4">
+            <AppButton
+              class="mr-4"
+              @mouseenter="showMail = true"
+              @mouseleave="showMail = false"
+            >
               <a href="mailto:filizlerbuse@gmail.com">Send email</a>
             </AppButton>
             <AppButton
@@ -68,6 +72,12 @@ function handleHover(hover: boolean) {
             >
               About <span class="hidden sm:inline">me</span>
             </AppButton>
+          </div>
+          <div
+            v-if="showMail"
+            class="pt-1 text-green-700 absolute"
+          >
+            filizlerbuse@gmail.com
           </div>
           <div class="hidden md:flex mt-16 filter text-4xl gap-8 !z-50">
             <Icon
