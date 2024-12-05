@@ -11,7 +11,7 @@
           Freelance
         </AppParagraph>
         <div class="grid md:grid-cols-2 gap-8 mt-12">
-          <LazyTestimonial
+          <LazyTestimonialApp
             project-name="Fevkinde Advertising Agency"
             job="Advertising agency"
             website-link="https://fevkinde.com.tr"
@@ -27,8 +27,8 @@
               capture the brand's dynamic spirit, contributing to its digital
               presence.
             </p>
-          </LazyTestimonial>
-          <LazyTestimonial
+          </LazyTestimonialApp>
+          <LazyTestimonialApp
             project-name="Demirfit Work Clothes"
             job="Work clothes firm"
             website-link="https://demirfit.com"
@@ -44,7 +44,7 @@
               showcases the company's values, products, and services while
               highlighting DEMİRFİT as a trusted business partner.
             </p>
-          </LazyTestimonial>
+          </LazyTestimonialApp>
         </div>
       </div>
       <div class="mt-8">
@@ -56,7 +56,7 @@
           Side Projects
         </AppParagraph>
         <div class="grid md:grid-cols-2 gap-8 mt-12">
-          <LazyTestimonial
+          <LazyTestimonialApp
             project-name="Movie App"
             job="Movie review platform"
             website-link="https://moviebusapp.netlify.app/"
@@ -71,8 +71,8 @@
               functional platform for cinema lovers. It is designed to provide
               both entertaining and educational experiences.
             </p>
-          </LazyTestimonial>
-          <LazyTestimonial
+          </LazyTestimonialApp>
+          <LazyTestimonialApp
             project-name="Movie Chat App"
             job="Chat application"
             website-link="https://github.com/busefilizler/movie-chat-app"
@@ -87,12 +87,12 @@
               expertise while providing a fun and engaging platform for movie
               enthusiasts.
             </p>
-          </LazyTestimonial>
+          </LazyTestimonialApp>
         </div>
       </div>
       <div class="mt-8">
         <div class="grid md:grid-cols-2 gap-8 mt-16">
-          <LazyTestimonial
+          <LazyTestimonialApp
             project-name="Widget Dashboard"
             job="Create custom dashboard"
             website-link="https://github.com/busefilizler/widgetDashboardForVue"
@@ -107,8 +107,8 @@
               management, and interface design, while delivering a personalized
               user experience.
             </p>
-          </LazyTestimonial>
-          <LazyTestimonial
+          </LazyTestimonialApp>
+          <LazyTestimonialApp
             project-name="My portfolio"
             job="Online CV"
             website-link="https://busedurudogan.com"
@@ -127,7 +127,7 @@
               expertise but also serves as a professional digital representation
               of my work.
             </p>
-          </LazyTestimonial>
+          </LazyTestimonialApp>
         </div>
       </div>
     </AppSection>
