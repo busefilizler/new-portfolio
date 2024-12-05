@@ -1,6 +1,6 @@
 import tailwindTypography from '@tailwindcss/typography'
 import tailwindForms from '@tailwindcss/forms'
-import { typographyStyles } from './typography.js'
+import { typographyStyles } from './typography.ts'
 
 module.exports = {
   content: [
@@ -8,7 +8,7 @@ module.exports = {
     './components/**/*.{js,ts,vue}',
     './layouts/**/*.{js,ts,vue}',
     './plugins/**/*.{js,ts}',
-    './nuxt.config.{js,ts}', 
+    './nuxt.config.{js,ts}',
   ],
   theme: {
     extend: {
@@ -24,9 +24,9 @@ module.exports = {
         'bg-shift': {
           '0%, 100%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
-        }
-      }
-    }
+        },
+      },
+    },
   },
   plugins: [tailwindTypography, tailwindForms],
 }

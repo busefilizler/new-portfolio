@@ -154,17 +154,16 @@
           </div>
         </div>
         <div class="hidden sticky bottom-0 lg:block">
-          <NuxtPicture
+          <img
             width="388"
             height="531"
             format="avif,webp"
             densities="x1 x2"
-            placeholder
             :img-attrs="{ class: 'z-20 ml-36 -mb-24 opacity-70 flex justify-end' }"
             src="/img/me2.webp"
             alt=""
             aria-hidden
-          />
+          >
         </div>
       </div>
     </AppSection>

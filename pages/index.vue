@@ -30,16 +30,15 @@ function handleHover(hover: boolean) {
               @mouseenter="handleHover(true)"
               @mouseleave="handleHover(false)"
             >
-              <NuxtPicture
+              <img
                 format="avif,webp"
                 width="308"
                 height="438"
                 densities="x1 x2"
-                placeholder="blur"
                 :img-attrs="{ class: 'z-20 relative' }"
                 :src="currentImage"
                 alt="Photo of Buse Durudoğan"
-              />
+              >
             </div>
           </div>
           <AppParagraph
@@ -104,16 +103,15 @@ function handleHover(hover: boolean) {
           @mouseenter="handleHover(true)"
           @mouseleave="handleHover(false)"
         >
-          <NuxtPicture
+          <img
             format="avif,webp"
             width="370"
             height="590"
             densities="x1 x2"
-            placeholder="blur"
             :img-attrs="{ class: 'z-20 relative' }"
             :src="currentImage"
             alt="Photo of Buse Durudoğan"
-          />
+          >
         </div>
       </div>
     </AppSection>
