@@ -2,16 +2,29 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  modules: [
-    '@nuxt/image',
-    '@nuxt/icon',
-    '@nuxt/eslint',
-    '@nuxtjs/tailwindcss',
-
-  ],
+  modules: ['@nuxt/image', '@nuxt/icon', '@nuxt/eslint', '@nuxtjs/tailwindcss'],
   ssr: false,
   devtools: { enabled: false },
+  runtimeConfig: {
+    public: {
+      site: {
+        url: 'https://www.busedurudogan.neflify.app',
+      },
+    },
+  },
+  routeRules: {
+    '/': {
+      redirect: {
+        to: '/',
+        statusCode: 301,
+      },
+    },
+  },
 
+  watch: ['typography.ts'],
+  future: {
+    typescriptBundlerResolution: true,
+  },
   compatibilityDate: '2024-11-01',
   nitro: {
     preset: 'node-server',
