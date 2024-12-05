@@ -159,7 +159,7 @@
             height="531"
             format="avif,webp"
             densities="x1 x2"
-            :img-attrs="{ class: 'z-20 ml-36 -mb-24 opacity-70 flex justify-end' }"
+            class="z-20 ml-36 -mb-24 opacity-70 flex justify-end"
             src="/img/me2.webp"
             alt=""
             aria-hidden

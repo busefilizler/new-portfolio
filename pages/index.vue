@@ -35,7 +35,7 @@ function handleHover(hover: boolean) {
                 width="308"
                 height="438"
                 densities="x1 x2"
-                :img-attrs="{ class: 'z-20 relative' }"
+                class="z-20 relative"
                 :src="currentImage"
                 alt="Photo of Buse Durudoğan"
               >
@@ -108,7 +108,7 @@ function handleHover(hover: boolean) {
             width="370"
             height="590"
             densities="x1 x2"
-            :img-attrs="{ class: 'z-20 relative' }"
+            class="z-20 relative"
             :src="currentImage"
             alt="Photo of Buse Durudoğan"
           >

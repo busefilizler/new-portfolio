@@ -15,7 +15,7 @@ defineProps<{
         densities="1x 2x"
         width="280"
         height="170"
-        :img-attrs="{ class: 'mr-4 mt-2 opacity-50 hover:opacity-100' }"
+        class="mr-4 mt-2 opacity-50 hover:opacity-100"
         :src="imageLink"
         :alt="`Headshot of ${projectName}`"
       >
