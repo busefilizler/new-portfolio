@@ -1,23 +1,35 @@
 <script setup lang="ts">
-import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
+import { useI18n } from 'vue-i18n'
 
+const { t, setLocale } = useI18n()
 const MENU_ITEMS = [
-  {
-    text: "Home",
-    to: "/",
-    activeRoutes: ["/", "/about/", "/project/", "/contact/"],
-  },
-  { text: "About Me", to: "/about/", activeRoutes: [] },
-  { text: "My Projects", to: "/project", activeRoutes: [] },
-  { text: "Contact Me", to: "/contact/", activeRoutes: [] },
-] as const;
+  { textKey: 'menu.home', to: '/' },
+  { textKey: 'menu.about', to: '/about/' },
+  { textKey: 'menu.projects', to: '/project' },
+  { textKey: 'menu.contact', to: '/contact/' },
+] as const
+const locale = ref('en')
+const changeLanguage = () => {
+  const lang = document.documentElement.lang === 'en' ? 'tr' : 'en'
+  setLocale(lang)
+  locale.value = lang
+  document.documentElement.lang = lang
+}
 </script>
+
 <template>
-  <Disclosure v-slot="{ open }" as="nav">
+  <Disclosure
+    v-slot="{ open }"
+    as="nav"
+  >
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-20 items-center justify-between">
         <div class="flex items-center mr-3">
-          <AppLink to="/" class="flex-shrink-0 flex items-center">
+          <AppLink
+            to="/"
+            class="flex-shrink-0 flex items-center"
+          >
             <img
               width="140"
               height="36"
@@ -31,12 +43,19 @@ const MENU_ITEMS = [
           <div class="flex gap-x-7 items-center">
             <AppLink
               v-for="item in MENU_ITEMS"
-              :key="item.text"
+              :key="item.textKey"
               :to="item.to"
               class="transition-all duration-200 border-b-2 border-transparent pt-1 py-1 px-2 md:px-3 md:py-2 text-base font-medium text-gray-300 hover:text-green-500"
             >
-              {{ item.text }}</AppLink
+              {{ t(item.textKey) }}
+            </AppLink>
+            <div
+              class="transition-all cursor-pointer uppercase duration-200 border-b-2 border-transparent pt-1 py-1 px-2 md:px-3 md:py-2 text-base font-medium text-gray-300 hover:text-green-500 flex items-center gap-2"
+              @click="changeLanguage"
             >
+              <div>{{ locale }}</div>
+              <Icon name="oui:globe" />
+            </div>
           </div>
         </div>
         <div class="flex sm:hidden items-center gap-4">
@@ -58,18 +77,32 @@ const MENU_ITEMS = [
       </div>
     </div>
 
-    <DisclosurePanel v-slot="{ close }" class="sm:hidden">
+    <DisclosurePanel
+      v-slot="{ close }"
+      class="sm:hidden"
+    >
       <div class="space-y-1 px-2 pb-3 pt-2">
-        <DisclosureButton v-for="item in MENU_ITEMS" :key="item.text" as="span">
+        <DisclosureButton
+          v-for="item in MENU_ITEMS"
+          :key="item.textKey"
+          as="span"
+        >
           <AppLink
             active-class="text-green-500"
             :to="item.to"
             class="transition-all block duration-200 rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-green-500"
             @click="close"
           >
-            {{ item.text }}</AppLink
-          >
+            {{ t(item.textKey) }}
+          </AppLink>
         </DisclosureButton>
+        <div
+          class="transition-all cursor-pointer uppercase duration-200 border-b-2 border-transparent pt-1 py-1 md:px-3 md:py-2 text-base font-medium text-gray-300 hover:text-green-500 flex items-center justify-end gap-2 px-10"
+          @click="changeLanguage"
+        >
+          <div>{{ locale }}</div>
+          <Icon name="oui:globe" />
+        </div>
       </div>
     </DisclosurePanel>
   </Disclosure>

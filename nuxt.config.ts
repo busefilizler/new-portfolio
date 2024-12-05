@@ -2,25 +2,15 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
-  modules: ['@nuxt/image', '@nuxt/icon', '@nuxt/eslint', '@nuxtjs/tailwindcss'],
+  modules: [
+    '@nuxt/image',
+    '@nuxt/icon',
+    '@nuxt/eslint',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/i18n',
+  ],
   ssr: false,
   devtools: { enabled: false },
-  // runtimeConfig: {
-  //   public: {
-  //     site: {
-  //       url: 'https://www.busedurudogan.neflify.app',
-  //     },
-  //   },
-  // },
-  // routeRules: {
-  //   '/': {
-  //     redirect: {
-  //       to: '/',
-  //       statusCode: 301,
-  //     },
-  //   },
-  // },
-
   watch: ['typography.ts'],
   future: {
     typescriptBundlerResolution: true,
@@ -36,6 +26,9 @@ export default defineNuxtConfig({
     config: {
       stylistic: true,
     },
+  },
+  i18n: {
+    vueI18n: './i18n.config.ts', // if you are using custom path, default
   },
   image: {
     dir: 'public',

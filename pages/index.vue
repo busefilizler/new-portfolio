@@ -45,18 +45,13 @@ function handleHover(hover: boolean) {
             look="subParagraph"
             class="pt-8"
           >
-            Hi! I am a front-end developer who tries to become a better version
-            of herself. I love teamwork, interacting with people, and creating
-            nice stuff I am willing to learn new technologies. I am ready to
-            take action become part of a team and push my limits.
+            {{ $t('part1') }}
           </AppParagraph>
           <AppParagraph
             look="subParagraph"
             class="pt-6"
           >
-            I have experience with Vue, TailwindCSS, ElementUI, PrimeVue,
-            Vuetify, Pinia, DevExtreme, Vuex, TypeScript, JSX, TSX, socket.io,
-            tanstack/vue-query, Nuxt.js, and React.
+            {{ $t('part2') }}
           </AppParagraph>
           <div class="pt-8 flex">
             <AppButton
@@ -64,13 +59,15 @@ function handleHover(hover: boolean) {
               @mouseenter="showMail = true"
               @mouseleave="showMail = false"
             >
-              <a href="mailto:filizlerbuse@gmail.com">Send email</a>
+              <a href="mailto:filizlerbuse@gmail.com">
+                {{ $t('sendMail') }}
+              </a>
             </AppButton>
             <AppButton
               to="/about/"
               look="secondary"
             >
-              About <span class="hidden sm:inline">me</span>
+              {{ $t('about') }}
             </AppButton>
           </div>
           <div
