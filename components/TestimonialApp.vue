@@ -10,15 +10,13 @@ defineProps<{
 <template>
   <div class="bg-zinc-900 p-8 text-zinc-200 flex flex-col justify-start">
     <div class="mb-8 pb-8 flex gap-x-2 items-center border-b border-b-zinc-400">
-      <NuxtPicture
+      <img
         format="avif,webp"
         densities="1x 2x"
-        width="280"
-        height="170"
-        :img-attrs="{ class: 'mr-4 mt-2 opacity-50 hover:opacity-100' }"
+        class="mr-4 mt-2 opacity-50 hover:opacity-100 w-[50%] h-[100%] object-cover"
         :src="imageLink"
         :alt="`Headshot of ${projectName}`"
-      />
+      >
       <div>
         <p class="font-bold">
           {{ projectName }}
