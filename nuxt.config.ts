@@ -5,21 +5,21 @@ export default defineNuxtConfig({
   modules: ['@nuxt/image', '@nuxt/icon', '@nuxt/eslint', '@nuxtjs/tailwindcss'],
   ssr: false,
   devtools: { enabled: false },
-  runtimeConfig: {
-    public: {
-      site: {
-        url: 'https://www.busedurudogan.neflify.app',
-      },
-    },
-  },
-  routeRules: {
-    '/': {
-      redirect: {
-        to: '/',
-        statusCode: 301,
-      },
-    },
-  },
+  // runtimeConfig: {
+  //   public: {
+  //     site: {
+  //       url: 'https://www.busedurudogan.neflify.app',
+  //     },
+  //   },
+  // },
+  // routeRules: {
+  //   '/': {
+  //     redirect: {
+  //       to: '/',
+  //       statusCode: 301,
+  //     },
+  //   },
+  // },
 
   watch: ['typography.ts'],
   future: {
