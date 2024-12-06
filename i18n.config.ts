@@ -71,8 +71,8 @@ export default defineI18nConfig(() => ({
       },
     },
     tr: {
-      part1: 'Merhaba! Kendini geliştirmeye çalışan bir front-end geliştiriciyim. Takım çalışmasını, insanlarla etkileşimde bulunmayı ve güzel şeyler yaratmayı seviyorum. Yeni teknolojiler öğrenmeye istekliyim. Bir ekip olmanın bir parçası olmaya hazırım ve sınırlarımı zorlamaya hazırım.',
-      part2: 'Vue, TailwindCSS, ElementUI, PrimeVue, Vuetify, Pinia, DevExtreme, Vuex, TypeScript, JSX, TSX, socket.io, tanstack/vue-query, Nuxt.js ve React ile deneyimim var.',
+      part1: 'Merhaba! Kendini sürekli geliştirmeye odaklanmış bir front-end geliştiricisiyim. Takım çalışmasının gücüne inanıyor ve insanlarla etkileşimde bulunmaktan büyük keyif alıyorum. Yaratıcı projeler üzerinde çalışmak benim için bir tutku, her zaman estetik ve fonksiyonellik arasında mükemmel bir denge yakalamayı hedefliyorum. Teknolojilere olan ilgim ise her geçen gün artıyor; yeni araçlar ve teknikler öğrenmek, sınırlarımı zorlamak beni motive ediyor. Bir ekip içinde yer alarak, birlikte anlamlı projelere imza atmayı ve kendimi daha da geliştirmeyi büyük bir heyecanla bekliyorum.',
+      part2: 'Vue, TailwindCSS, ElementUI, PrimeVue, Vuetify, Pinia, DevExtreme, Vuex, TypeScript, JSX, TSX, socket.io, tanstack/vue-query, Nuxt.js ve React.js ile deneyimim var.',
       sendMail: 'E-posta Gönder',
       downloadResume: 'Özgeçmiş İndir',
       about: 'Hakkımda',
@@ -93,7 +93,7 @@ export default defineI18nConfig(() => ({
         intro: 'İzmir\'de yaşayan tutkulu bir front-end geliştiriciyim. Takım çalışmasına yatkınım, insanlarla etkileşim kurmaktan keyif alıyorum ve anlamlı, görsel açıdan etkileyici projeler üretmekten gurur duyuyorum. Yeni teknolojiler keşfetmeye, sınırlarımı zorlamaya ve dinamik bir ekibin parçası olarak kalıcı bir etki yaratmaya istekliyim.',
         techStack: 'Kullandığım Teknolojiler',
         intro2: 'Çeşitli kütüphanelerle çalışmayı seviyorum. Eğer hayalimdeki teknolojileri seçecek olsaydım, aşağıdaki teknolojileri seçerdim:',
-        also: 'Ayrıca, teknik uzmanlığım modern web geliştirme için temel olan geniş bir araç ve framework yelpazesini kapsar. Vue.js (2/3), TypeScript ve Tailwind CSS, ElementUI, Vuetify gibi tasarım sistemlerinde uzmanım. Sorunsuz ve etkileşimli web uygulamaları oluşturmak için Nuxt.js, Pinia, DevExtreme ve socket.io konularında yetkinim. Git, Jira ve Figma ile Adobe XD gibi tasarım araçlarında sağlam bir altyapıya sahibim. Her projede işlevsellik ile tasarımı kusursuz bir şekilde bir araya getirebilirim.',
+        also: 'Ayrıca, teknik uzmanlığım modern web geliştirme için temel teşkil eden geniş framework yelpazesinde derinleşmiştir. Vue.js (2/3), TypeScript, Tailwind CSS, ElementUI ve Vuetify gibi tasarım sistemlerinde uzmanım. Etkileşimli web uygulamaları geliştirme konusunda Nuxt.js, Pinia, DevExtreme ve socket.io ile yetkinim. Ayrıca, Git, Jira ve Figma gibi işbirliği araçlarının yanı sıra Adobe XD gibi tasarım platformlarında da güçlü bir altyapıya sahibim. Her projede işlevselliği ve tasarımı mükemmel bir uyum içinde birleştirme yeteneğine sahibim.',
       },
       contactPage: {
         hiThere: 'Merhaba!',
