@@ -3,6 +3,7 @@ export default defineI18nConfig(() => ({
   locale: 'en',
   messages: {
     en: {
+      visitWebsite: 'Visit Website',
       part1: 'Hi! I am a front-end developer who tries to become a better version of herself. I love teamwork, interacting with people, and creating nice stuff I am willing to learn new technologies. I am ready to take action become part of a team and push my limits.',
       part2: 'I have experience with Vue, TailwindCSS, ElementUI, PrimeVue, Vuetify, Pinia, DevExtreme, Vuex, TypeScript, JSX, TSX, socket.io, tanstack/vue-query, Nuxt.js, and React.',
       sendMail: 'Send Email',
@@ -110,6 +111,7 @@ export default defineI18nConfig(() => ({
 
     },
     tr: {
+      visitWebsite: 'Web Sitesini Ziyaret Et',
       part1: 'Merhaba! Kendini sürekli geliştirmeye odaklanmış bir front-end geliştiricisiyim. Takım çalışmasının gücüne inanıyor ve insanlarla etkileşimde bulunmaktan büyük keyif alıyorum. Yaratıcı projeler üzerinde çalışmak benim için bir tutku, her zaman estetik ve fonksiyonellik arasında mükemmel bir denge yakalamayı hedefliyorum. Teknolojilere olan ilgim ise her geçen gün artıyor; yeni araçlar ve teknikler öğrenmek, sınırlarımı zorlamak beni motive ediyor. Bir ekip içinde yer alarak, birlikte anlamlı projelere imza atmayı ve kendimi daha da geliştirmeyi büyük bir heyecanla bekliyorum.',
       part2: 'Vue, TailwindCSS, ElementUI, PrimeVue, Vuetify, Pinia, DevExtreme, Vuex, TypeScript, JSX, TSX, socket.io, tanstack/vue-query, Nuxt.js ve React.js ile deneyimim var.',
       sendMail: 'E-posta Gönder',

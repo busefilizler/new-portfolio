@@ -30,7 +30,7 @@ defineProps<{
             :href="websiteLink"
             target="_blank"
           >
-            Visit website
+            {{ $t('visitWebsite') }}
             <Icon
               name="heroicons:arrow-small-right-solid"
               class="w-4 h-4"
