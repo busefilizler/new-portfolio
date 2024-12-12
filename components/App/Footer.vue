@@ -181,7 +181,7 @@ const navigation = {
           </a>
         </div>
         <p class="mt-6 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
-          &copy; {{ new Date().getFullYear() }} {{ $t("footer.copyRight") }}
+          &copy; {{ new Date().getFullYear() }} {{ $t("footer.copyright") }}
           <br>
           <span class="text-[8px] leading-5 text-gray-400">
             {{ $t("footer.logoCredit") }}

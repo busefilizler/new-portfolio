@@ -21,13 +21,15 @@
           >
         </div>
         <div class="-mt-16 lg:mt-0 text-justify">
-          <div class="prose lg:prose-lg lg:mt-8">
-            <h2>Hey!</h2>
+          <div class="mt-14 lg:mt-8">
+            <h2 class=" text-2xl sm:text-2xl md:text-3xl lg:text-3xl pb-3 font-semibold">
+              Hey!
+            </h2>
             <p>
               {{ $t('aboutPage.intro') }}
             </p>
 
-            <h2>
+            <h2 class=" text-2xl sm:text-2xl md:text-3xl lg:text-3xl pb-3 pt-16 font-semibold">
               {{ $t('aboutPage.techStack') }}
             </h2>
 
