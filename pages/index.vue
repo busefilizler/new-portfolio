@@ -21,7 +21,7 @@ function handleHover(hover: boolean) {
                 class="flex flex-col sm:justify-start font-mono mt-8 md:mt-0 ml-4 md:ml-0"
               >
                 <span>Buse</span>
-                <span>Filizler Durudoğanx</span>
+                <span>Filizler Durudoğanxy</span>
                 <span class="-mt-2">-</span>
               </AppParagraph>
             </div>
