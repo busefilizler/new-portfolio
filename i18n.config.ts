@@ -22,7 +22,7 @@ export default defineI18nConfig(() => ({
         sendEmail: 'Send Email',
         copyright: 'Buse Durudoğan &bull; Frontend Developer',
         logoCredit: 'Logo designed by',
-        experience: 'My Experiences',
+        experience: 'Experiences',
       },
       aboutPage: {
         intro: 'I’m a passionate front-end developer based in İzmir,Turkey, always striving to become a better version of myself. I excel in collaborative environments, enjoy connecting with people, and take pride in creating meaningful and visually appealing projects. I am eager to explore new technologies, push my boundaries, and make a lasting impact as part of a dynamic team.',
@@ -130,7 +130,7 @@ export default defineI18nConfig(() => ({
         sendEmail: 'E-posta Gönder',
         copyright: 'Buse Durudoğan &bull; Frontend Developer',
         logoCredit: 'Logo tasarımı',
-        experience: 'Deneyimlerim',
+        experience: 'Deneyimler',
       },
       aboutPage: {
         intro: 'İzmir\'de yaşayan tutkulu bir front-end geliştiriciyim. Takım çalışmasına yatkınım, insanlarla etkileşim kurmaktan keyif alıyorum ve anlamlı, görsel açıdan etkileyici projeler üretmekten gurur duyuyorum. Yeni teknolojiler keşfetmeye, sınırlarımı zorlamaya ve dinamik bir ekibin parçası olarak kalıcı bir etki yaratmaya istekliyim.',
