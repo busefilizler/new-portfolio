@@ -207,7 +207,7 @@ export default defineI18nConfig(() => ({
             description: 'Dokuz Eylül Üniversitesi - Pedagojik Formasyon (2017 - 2018)',
           },
           {
-            title: 'Güzel Sanatlar Lisansı',
+            title: 'İletişim Bilimleri Lisansı',
             description: 'Anadolu Üniversitesi - Halkla İlişkiler ve Reklamcılık (2019 - 2022)',
           },
           {
