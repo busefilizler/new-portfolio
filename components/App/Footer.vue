@@ -51,8 +51,8 @@ const navigation = {
       Footer
     </h2>
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-8 sm:pt-10 lg:px-8 xl:pt-22">
-      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="flex justify-center items-center xl:col-span-1">
+      <div class="xl:grid xl:grid-cols-1 xl:gap-8">
+        <div class="flex justify-center items-center">
           <img
             loading="lazy"
             width="256"
