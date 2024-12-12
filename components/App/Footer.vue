@@ -10,9 +10,12 @@ const navigation = {
       activeRoutes: ['/', '/about/', '/project/', '/contact/'],
     },
     { name: 'menu.about', to: '/about/' },
-    { name: 'menu.projects', to: '/project/' },
   ],
   contact: [{ name: 'menu.contact', to: '/contact/' }],
+  experience: [
+    { name: 'menu.experience', to: '/experience/' },
+    { name: 'menu.projects', to: '/project/' },
+  ],
   social: [
     {
       name: 'GitHub',
@@ -68,11 +71,11 @@ const navigation = {
           >
         </div>
 
-        <div class="grid grid-cols-1 gap-8 xl:col-span-2 pt-10 xl:pt-4">
+        <div class="grid grid-cols-2 gap-8 xl:col-span-3 pt-10 pb-5 xl:pt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div class="mt-10 md:mt-0">
               <h3 class="text-sm font-semibold leading-6 text-white">
-                {{ $t('footer.general') }}
+                {{ $t("footer.general") }}
               </h3>
               <ul
                 role="list"
@@ -93,7 +96,7 @@ const navigation = {
             </div>
             <div class="mt-10 md:mt-0">
               <h3 class="text-sm font-semibold leading-6 text-white">
-                {{ $t('footer.contact') }}
+                {{ $t("footer.contact") }}
               </h3>
               <ul
                 role="list"
@@ -110,20 +113,43 @@ const navigation = {
                     {{ t(item.name) }}
                   </AppLink>
                 </li>
-                <li>
-                  <AppLink class="text-sm leading-6 text-gray-300 hover:text-white">
-                    <a
-                      href="mailto:filizlerbuse@gmail.com"
-                    >
-                      {{ $t('footer.sendEmail') }}
-                    </a>
+              </ul>
+            </div>
+          </div>
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div class="mt-10 md:mt-0">
+              <h3 class="text-sm font-semibold leading-6 text-white">
+                {{ $t("footer.experience") }}
+              </h3>
+              <ul
+                role="list"
+                class="mt-6 space-y-4"
+              >
+                <li
+                  v-for="item in navigation.experience"
+                  :key="item.name"
+                >
+                  <AppLink
+                    :to="item.to"
+                    class="text-sm leading-6 text-gray-300 hover:text-white"
+                  >
+                    {{ t(item.name) }}
                   </AppLink>
                 </li>
               </ul>
             </div>
+
+            <div class="mt-10 md:mt-0">
+              <h3 class="text-sm font-semibold leading-6 text-white">
+                <a href="mailto:filizlerbuse@gmail.com">
+                  {{ $t("footer.sendEmail") }}
+                </a>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
+
       <div
         class="mt-4 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between"
       >
@@ -155,10 +181,10 @@ const navigation = {
           </a>
         </div>
         <p class="mt-6 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">
-          &copy; {{ new Date().getFullYear() }} {{ $t('footer.copyRight') }}
+          &copy; {{ new Date().getFullYear() }} {{ $t("footer.copyRight") }}
           <br>
           <span class="text-[8px] leading-5 text-gray-400">
-            {{ $t('footer.logoCredit') }}
+            {{ $t("footer.logoCredit") }}
             <a href="https://linktr.ee/muratyilmazdesign">Murat Yılmaz</a></span>
         </p>
       </div>

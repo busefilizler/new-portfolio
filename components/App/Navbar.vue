@@ -7,6 +7,7 @@ const MENU_ITEMS = [
   { textKey: 'menu.home', to: '/' },
   { textKey: 'menu.about', to: '/about/' },
   { textKey: 'menu.projects', to: '/project' },
+  { textKey: 'menu.experience', to: '/experience/' },
   { textKey: 'menu.contact', to: '/contact/' },
 ] as const
 const locale = ref('en')
@@ -40,7 +41,7 @@ const changeLanguage = () => {
           </AppLink>
         </div>
         <div class="hidden sm:ml-6 sm:block">
-          <div class="flex gap-x-7 items-center">
+          <div class="flex gap-x-3 items-center">
             <AppLink
               v-for="item in MENU_ITEMS"
               :key="item.textKey"

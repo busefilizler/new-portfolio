@@ -13,6 +13,7 @@ export default defineI18nConfig(() => ({
         about: 'About Me',
         projects: 'My Projects',
         contact: 'Contact Me',
+        experience: 'My Experiences',
       },
       footer: {
         general: 'General',
@@ -20,6 +21,7 @@ export default defineI18nConfig(() => ({
         sendEmail: 'Send Email',
         copyright: 'Buse Durudoğan &bull; Frontend Developer',
         logoCredit: 'Logo designed by',
+        experience: 'My Experiences',
       },
       aboutPage: {
         intro: 'I’m a passionate front-end developer based in İzmir,Turkey, always striving to become a better version of myself. I excel in collaborative environments, enjoy connecting with people, and take pride in creating meaningful and visually appealing projects. I am eager to explore new technologies, push my boundaries, and make a lasting impact as part of a dynamic team.',
@@ -69,6 +71,43 @@ export default defineI18nConfig(() => ({
             'This portfolio site was designed to both advance my skills and represent my professional identity in the best possible way. Built with modern technologies such as Nuxt 3, Tailwind CSS, and TypeScript, it functions as an online CV and a platform showcasing my projects. With SEO optimization, fast performance, and Nuxt Content integration, the site provides a seamless user experience. Prioritizing elegance and simplicity in its design, the flexibility of Tailwind CSS was utilized in typography and layout arrangements. This project not only demonstrates my technical expertise but also serves as a professional digital representation of my work.',
         },
       },
+      experiencePage: {
+        digitastic: {
+          titleTechnology: 'Technology',
+          technology: 'Vue, Tailwind, ElementUI, PrimeVue, Vuetify, Pinia, DevExtreme, Vuex, TypeScript, JSX, TSX, socket.io, tanstack/vue-query, Nuxt',
+          titleResponsibilities: 'Responsibilities',
+          responsibilities: 'Develop and maintain the B2B module of an application design for German-based accounting companies. Collaborate closely with the UI/UX team to ensure a seamless and user-friendly client experience. Conduct thorough testing and debugging to ensure the B2B module functions properly and meets client needs. Provide technical support and troubleshooting assistance to clients as needed. Work with cross-functional teams to integrate the B2B module with other application parts and ensure overall functionality. Maintain clear and detailed documentation of all code changes and updates.',
+        },
+        uda: {
+          responsibilities: 'Led a team of 4 people. Production of artificial intelligence-supported automation required for plant cultivation in soilless agriculture. Research of plants that have not been cultivated indoors but have high economic value.',
+        },
+      },
+      educationPage: {
+        title: 'Education',
+        sections: [
+          {
+            title: 'Bachelor of Science',
+            description: 'Ege University - Biology (2011 - 2016)',
+          },
+          {
+            title: 'Master of Science',
+            description: 'Ege University - Botany (2016 - 2019)',
+          },
+          {
+            title: 'Pedagogic Formation',
+            description: 'Dokuz Eylül University - Pedagogic Formation (2017 - 2018)',
+          },
+          {
+            title: 'Bachelor of Art',
+            description: 'Anadolu University - Public Relations and Advertising (2019 - 2022)',
+          },
+          {
+            title: 'Associate Degree',
+            description: 'Istanbul University - Management Information Systems (2023 - present)',
+          },
+        ],
+      },
+
     },
     tr: {
       part1: 'Merhaba! Kendini sürekli geliştirmeye odaklanmış bir front-end geliştiricisiyim. Takım çalışmasının gücüne inanıyor ve insanlarla etkileşimde bulunmaktan büyük keyif alıyorum. Yaratıcı projeler üzerinde çalışmak benim için bir tutku, her zaman estetik ve fonksiyonellik arasında mükemmel bir denge yakalamayı hedefliyorum. Teknolojilere olan ilgim ise her geçen gün artıyor; yeni araçlar ve teknikler öğrenmek, sınırlarımı zorlamak beni motive ediyor. Bir ekip içinde yer alarak, birlikte anlamlı projelere imza atmayı ve kendimi daha da geliştirmeyi büyük bir heyecanla bekliyorum.',
@@ -81,6 +120,7 @@ export default defineI18nConfig(() => ({
         about: 'Hakkımda',
         projects: 'Projelerim',
         contact: 'İletişim',
+        experience: 'Deneyimlerim',
       },
       footer: {
         general: 'Genel',
@@ -88,6 +128,7 @@ export default defineI18nConfig(() => ({
         sendEmail: 'E-posta Gönder',
         copyright: 'Buse Durudoğan &bull; Frontend Developer',
         logoCredit: 'Logo tasarımı',
+        experience: 'Deneyimlerim',
       },
       aboutPage: {
         intro: 'İzmir\'de yaşayan tutkulu bir front-end geliştiriciyim. Takım çalışmasına yatkınım, insanlarla etkileşim kurmaktan keyif alıyorum ve anlamlı, görsel açıdan etkileyici projeler üretmekten gurur duyuyorum. Yeni teknolojiler keşfetmeye, sınırlarımı zorlamaya ve dinamik bir ekibin parçası olarak kalıcı bir etki yaratmaya istekliyim.',
@@ -136,6 +177,42 @@ export default defineI18nConfig(() => ({
           description:
             'Bu portföy sitesi, hem becerilerimi geliştirmek hem de profesyonel kimliğimi en iyi şekilde temsil etmek amacıyla tasarlandı. Nuxt 3, Tailwind CSS ve TypeScript gibi modern teknolojilerle oluşturulan bu site, projelerimi sergileyen bir platform ve çevrimiçi bir CV işlevi görür. SEO optimizasyonu, hızlı performans ve Nuxt Content entegrasyonu ile site, kesintisiz bir kullanıcı deneyimi sunar. Tasarımında zarafet ve sadelik öncelikli olarak, Tailwind CSS\'in esnekliği tipografi ve düzen düzenlemelerinde kullanıldı. Bu proje, teknik uzmanlığımı gösterirken aynı zamanda çalışmalarımın profesyonel bir dijital temsili olarak hizmet ediyor.',
         },
+      },
+      experiencePage: {
+        digitastic: {
+          titleTechnology: 'Teknolojiler',
+          technology: 'Vue, Tailwind, ElementUI, PrimeVue, Vuetify, Pinia, DevExtreme, Vuex, TypeScript, JSX, TSX, socket.io, tanstack/vue-query, Nuxt',
+          titleResponsibilities: 'Sorumluluklar',
+          responsibilities: 'Almanya merkezli muhasebe şirketleri için tasarlanmış bir uygulamanın B2B modülünü geliştirmek ve sürdürmek. Kullanıcı dostu ve sorunsuz bir müşteri deneyimi sağlamak için UI/UX ekibiyle yakın iş birliği yapmak. B2B modülünün düzgün çalışmasını ve müşteri ihtiyaçlarını karşılamasını sağlamak için kapsamlı testler ve hata ayıklama yapmak. Gerekli durumlarda müşterilere teknik destek ve sorun giderme desteği sağlamak. B2B modülünü diğer uygulama parçalarıyla entegre etmek ve genel işlevselliği sağlamak için çapraz fonksiyonel ekiplerle çalışmak. Tüm kod değişiklikleri ve güncellemelerin net ve ayrıntılı belgelerini tutmak.',
+        },
+        uda: {
+          responsibilities: '4 kişilik bir ekibi yönetti. Topraksız tarımda bitki yetiştirilmesi için gerekli olan yapay zeka destekli otomasyon üretimi. Kapalı alanda yetiştirilmeyen ancak yüksek ekonomik değere sahip bitkilerin araştırılması.',
+        },
+      },
+      educationPage: {
+        title: 'Eğitim',
+        sections: [
+          {
+            title: 'Fen Bilimleri Lisansı',
+            description: 'Ege Üniversitesi - Biyoloji (2011 - 2016)',
+          },
+          {
+            title: 'Fen Bilimleri Yüksek Lisansı',
+            description: 'Ege Üniversitesi - Botanik (2016 - 2019)',
+          },
+          {
+            title: 'Pedagojik Formasyon',
+            description: 'Dokuz Eylül Üniversitesi - Pedagojik Formasyon (2017 - 2018)',
+          },
+          {
+            title: 'Güzel Sanatlar Lisansı',
+            description: 'Anadolu Üniversitesi - Halkla İlişkiler ve Reklamcılık (2019 - 2022)',
+          },
+          {
+            title: 'Önlisans',
+            description: 'İstanbul Üniversitesi - Yönetim Bilişim Sistemleri (2023 - halen)',
+          },
+        ],
       },
     },
   },
