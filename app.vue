@@ -35,7 +35,7 @@ function useAppSeo() {
 
   useServerSeoMeta({
     author: 'Buse Durudoğan',
-    ogSiteName: 'https://www.busedurudogan.netlify.com/',
+    ogSiteName: 'https://www.busedurudogan.com/',
   })
 }
 </script>
