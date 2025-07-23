@@ -62,6 +62,26 @@
               {{ $t('projectsPage.movieChatApp.description') }}
             </p>
           </LazyTestimonialApp>
+          <LazyTestimonialApp
+            :project-name="$t('projectsPage.sudokuApp.title')"
+            :job="$t('projectsPage.sudokuApp.job')"
+            website-link="https://github.com/busefilizler/sudoku-game"
+            image-link="/img/testimonials/sudoku.webp"
+          >
+            <p>
+              {{ $t('projectsPage.sudokuApp.description') }}
+            </p>
+          </LazyTestimonialApp>
+          <LazyTestimonialApp
+            :project-name="$t('projectsPage.paymentUi.title')"
+            :job="$t('projectsPage.paymentUi.job')"
+            website-link=""
+            image-link="/img/testimonials/payment.webp"
+          >
+            <p>
+              {{ $t('projectsPage.paymentUi.description') }}
+            </p>
+          </LazyTestimonialApp>
         </div>
       </div>
       <div class="mt-8">

@@ -22,8 +22,8 @@
         look="secondary"
       >
         <a
-          href="/files/buseDurudogan.pdf"
-          download="buseDurudogan.pdf"
+          href="/files/resume.pdf"
+          download="resume.pdf"
         >
           {{ $t('downloadResume') }}
         </a>

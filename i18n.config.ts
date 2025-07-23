@@ -59,6 +59,16 @@ export default defineI18nConfig(() => ({
           description:
             'Movie Chat App is a side project that combines real-time communication with a passion for movies. Developed with Vue, Express, and Socket.io, this app allows users to join chat rooms, discuss movies in real-time, and share reviews about their favorite films. This project was created to improve my technical expertise while providing a fun and engaging platform for movie enthusiasts.',
         },
+        sudokuApp: {
+          title: 'Sudoku Game',
+          job: 'Interactive Sudoku game',
+          description: 'Sudoku Game is an interactive web-based Sudoku application built with Vue.js and Node.js. It features multiple difficulty levels, real-time scoring, hints, leaderboard, undo/redo, and multi-language support. Technologies: Vue 3, TypeScript, Vuetify, Tailwind CSS, Node.js, Express, MongoDB.',
+        },
+        paymentUi: {
+          title: 'Payment UI',
+          job: 'React payment UI',
+          description: 'A fully responsive, mobile-friendly payment screen UI built with React. Includes order details, delivery info, credit card payment, QR payment, shopping credit, split payment, and installment card payment screens. Pure UI, ready to be customized for any project.',
+        },
         widgetDashboard: {
           title: 'Widget Dashboard',
           job: 'Create custom dashboard',
@@ -166,6 +176,16 @@ export default defineI18nConfig(() => ({
           job: 'Sohbet uygulaması',
           description:
             'Film Sohbet Uygulaması, gerçek zamanlı iletişimi sinema tutkusu ile birleştiren bir yan projedir. Vue, Express ve Socket.io kullanılarak geliştirilen bu uygulama, kullanıcıların sohbet odalarına katılmalarını, filmleri gerçek zamanlı olarak tartışmalarını ve favori filmleri hakkında yorum paylaşmalarını sağlar. Teknik uzmanlığımı geliştirmek ve sinemaseverler için eğlenceli ve etkileşimli bir platform sunmak amacıyla bu projeyi yarattım.',
+        },
+        sudokuApp: {
+          title: 'Sudoku Game',
+          job: 'Etkileşimli Sudoku oyunu',
+          description: 'Sudoku Game, Vue.js ve Node.js ile geliştirilmiş etkileşimli bir web tabanlı Sudoku oyunudur. Birden fazla zorluk seviyesi, gerçek zamanlı puanlama, ipucu sistemi, liderlik tablosu, geri alma/yeniden yapma ve çoklu dil desteği sunar. Kullanılan teknolojiler: Vue 3, TypeScript, Vuetify, Tailwind CSS, Node.js, Express, MongoDB.',
+        },
+        paymentUi: {
+          title: 'Payment UI',
+          job: 'React ödeme arayüzü',
+          description: 'React ile geliştirilmiş, tamamen responsive ve mobil uyumlu bir ödeme ekranı arayüzü. Sipariş bilgileri, teslimat bilgileri, kredi kartı ile ödeme, QR ile ödeme, alışveriş kredisi, parçalı ödeme ve taksitli kredi kartı ile ödeme ekranlarını içerir. Sadece arayüzdür, isteyen kendi projesine entegre edebilir.',
         },
         widgetDashboard: {
           title: 'Widget Kontrol Paneli',
