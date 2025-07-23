@@ -2,7 +2,7 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue'
 import { useI18n } from 'vue-i18n'
 
-const { t, setLocale } = useI18n()
+const { t, locale, setLocale } = useI18n()
 const MENU_ITEMS = [
   { textKey: 'menu.home', to: '/' },
   { textKey: 'menu.about', to: '/about/' },
@@ -10,12 +10,9 @@ const MENU_ITEMS = [
   { textKey: 'menu.experience', to: '/experience/' },
   { textKey: 'menu.contact', to: '/contact/' },
 ] as const
-const locale = ref('en')
 const changeLanguage = () => {
-  const lang = document.documentElement.lang === 'en' ? 'tr' : 'en'
+  const lang = locale.value === 'en' ? 'tr' : 'en'
   setLocale(lang)
-  locale.value = lang
-  document.documentElement.lang = lang
 }
 </script>
 
